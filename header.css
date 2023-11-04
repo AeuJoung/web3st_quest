@@ -1,0 +1,73 @@
+/* 공통 */
+
+* {
+    padding : 0px;
+    margin: 0px;
+    font-family: verdana;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration-line : none;
+    color:black;
+}
+
+/* header 요소 */
+header {
+    width:100%;
+    z-index: 1;
+    background-color: white;
+}
+header.fixed {
+    position: fixed;
+    top:0px;
+}
+
+header .innerBox {
+    width:1180px; height:120px; margin: 0 auto;
+    position: relative;
+}
+
+header .innerBox ul.utility {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+header .innerBox ul.utility li {
+    display: inline-block;
+    color:gray;
+    font-size: 15px;
+    padding-left:20px;
+}
+header .innerBox h1 {
+    position: absolute;
+    left:10px;
+    bottom:15px;
+    font-weight: bold;
+}
+
+header .innerBox nav ul {
+    position: absolute;
+    text-align: right;
+    right: 0px; 
+    bottom: 0px;
+}
+header .innerBox nav ul li {
+    display: inline-block;
+    padding:0px 30px;
+    line-height: 52px;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .innerBox nav ul li:hover {
+    background-color: #353647;
+    color: white;
+}
+header .innerBox nav ul li:hover a {
+    color: white;
+}
+

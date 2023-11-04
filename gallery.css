@@ -1,0 +1,50 @@
+body {
+    padding-top : 120px;
+}
+
+section {
+    width:1000px;
+    margin: 0 auto 60px;
+    overflow: hidden;
+}
+
+section article {
+    position: relative;
+    float:left;
+}
+section article.left {
+    margin : 10px 10px 0px 0px;
+}
+section article.right {
+    margin-top : 10px;
+}
+
+section article.x700x400 { width:700px; height:400px; }
+section article.x290x190 { width:290px; height:190px; }
+section article.x290x95 { width:290px; height:95px; }
+section article.x490x480 { width:490px; height:480px; }
+section article.x490x240 { width:490px; height:240px; }
+section article.x500x490 { width:500px; height:490px; }
+section article.x1000x371 { width:1000px; height:371px; }
+section article.x1000x361 { width:1000px; height:361px; }
+
+section > article:nth-child(1) { background-image: url('img/700x400.png');}
+section > article:nth-child(2) { background-image: url('img/290x190.png');}
+section > article:nth-child(3) { background-image: url('img/290x95-1.png');}
+section > article:nth-child(4) { background-image: url('img/290x95-2.png');}
+section > article:nth-child(5) > article:nth-child(1) { background-image: url('img/490x240-1.png');}
+section > article:nth-child(5) > article:nth-child(2) { background-image: url('img/490x240-2.png');}
+section > article:nth-child(6) { background-image: url('img/500x490.png');}
+section > article:nth-child(7) { background-image: url('img/1000x371.png');}
+section > article:nth-child(8) { background-image: url('img/1000x361.png');}
+
+section p { color: white; }
+section p:not(.center) { position: absolute; }
+section > article:nth-child(1) > p { right:10px; bottom:10px; font-size: 30px; }
+section > article:nth-child(2) > p { top:50px; left:10px; font-size: 20px; }
+section > article:nth-child(3) > p { right:10px; bottom:20px; font-size: 20px; }
+section > article:nth-child(5) > article:nth-child(1) > p { width:300px; margin: 160px auto 0; color:black; }
+section > article:nth-child(5) > article:nth-child(2) > p { right:20px; bottom: 30px; font-size: 30px; color:gold; }
+section > article:nth-child(7) > p {line-height: 371px; text-align: center; font-size: 50px; text-shadow: 2px 2px 2px black;}
+section > article:nth-child(8) > p { width:450px; height: 150px; right:20px; bottom: 40px; font-size: 20px; }
+section > article:nth-child(8) > p > b { font-size: 30px; }
